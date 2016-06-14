@@ -23,6 +23,17 @@ create table another_thing (
   tags             text[] not null
 );
 
+create type my_custom_type as (
+  field1           text,
+  field2           text
+);
+
+create function input_my_custom_type(a my_custom_type) returns text as $$
+  select a.field1 || a.field2
+$$ language sql
+immutable
+strict;
+
 create function add(a int, b int) returns int as $$
   select a + b
 $$ language sql

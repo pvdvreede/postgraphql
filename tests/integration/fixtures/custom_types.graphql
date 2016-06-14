@@ -1,0 +1,7 @@
+query {
+  introspectionTypes: __type(name: "MyCustomType") {
+    kind
+    name
+  }
+  inputFunc: inputMyCustomType(a: {field1: "hello", field2: "world"})
+}

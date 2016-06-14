@@ -1,0 +1,11 @@
+{
+    "data": {
+        "introspectionTypes": {
+            "kind": "OBJECT",
+            "name": "MyCustomType"
+        },
+        "inputFunc": {
+            "inputMyCustomType": "helloworld"
+        }
+    }
+}
